@@ -17,10 +17,14 @@ HEADER
 ------------------------------------------------------------------------------
 */
 header {
-  margin: 50px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#logo,
+#login {
+  margin: 0 50px;
 }
 #logo {
   flex-grow: 1;
@@ -28,11 +32,10 @@ header {
 #login {
   font-weight: bold;
   color: #0065fc;
-  margin-left: 25px;
 }
 
 header nav ul li a {
-  margin: 0 25px;
+  margin-left: 50px;
 }
 
 ul {
@@ -57,4 +60,43 @@ a:hover,
 a:active {
   color: #0065fc;
   text-decoration: none;
+}
+/*
+MOBILE - Extra small devices (phones, 600px and down)
+------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 600px) {
+  header {
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  nav {
+    /*border-bottom: solid #0065fc;*/
+    order: 1;
+    flex-basis: 100vw;
+    flex-shrink: 0;
+  }
+  header nav ul li a {
+    display: block;
+    margin-left: 0;
+    width: 50vw;
+    padding: 10px 0;
+  }
+  #menu a,
+  #menu a:link,
+  #menu a:visited {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: solid #f2f2f2;
+  }
+  #menu a:hover,
+  #menu a:active {
+    color: #0065fc;
+    text-decoration: none;
+    border-bottom: solid #0065fc;
+  }
+  #logo,
+  #login {
+    margin: 0 20px;
+  }
 }
