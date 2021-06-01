@@ -9,8 +9,52 @@ classes :
 * {
   font-family: "Raleway", sans-serif;
 }
-
+body {
+  margin: 0;
+}
 /*
 HEADER
 ------------------------------------------------------------------------------
 */
+header {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  flex-grow: 1;
+}
+#login {
+  font-weight: bold;
+  color: #0065fc;
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  margin: 0 25px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0;
+}
+/* LINKS */
+/* a:link - a normal, unvisited link */
+/* a:visited - a link the user has visited */
+/* a:hover - a link when the user mouses over it */
+/* a:active - a link the moment it is clicked */
+a,
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  color: #0065fc;
+  text-decoration: none;
+}
