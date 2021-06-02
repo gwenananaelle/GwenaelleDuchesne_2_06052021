@@ -12,6 +12,9 @@ classes :
 body {
   margin: 0;
 }
+h1 {
+  font-size: 1.375em;
+}
 /*
 HEADER
 ------------------------------------------------------------------------------
@@ -102,15 +105,6 @@ MOBILE - Extra small devices (phones, 600px and down)
 SEARCH
 ------------------------------------------------------------------------------
 */
-/*
-#search-by-filter {
-  width: 90vw;
-  margin: auto;
-}
-.search-container {
-  margin: 2% 0;
-}
-*/
 #search {
   width: calc(100vw - 100px);
   margin: auto;
@@ -157,4 +151,19 @@ SEARCH
 }
 #search-form button .fa-search {
   display: none;
+}
+/*
+MOBILE - Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px) {
+  #search {
+    width: calc(100vw - 40px);
+    margin: auto;
+  }
+  #search-form button p {
+    display: none;
+  }
+  #search-form button .fa-search {
+    display: inline;
+  }
 }
