@@ -212,3 +212,20 @@ button.filters span {
 #info p {
   line-height: 25px;
 }
+/*
+MOBILE - Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px) {
+  #filter-title {
+    font-size: 1.125em;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 0;
+    display: block;
+  }
+  button.filters {
+    margin: 0.5em 0.25em 0.5em 0;
+    font-size: 1em;
+    padding-right: 15px;
+  }
+}
