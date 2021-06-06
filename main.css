@@ -18,6 +18,9 @@ h1 {
 h2 {
   font-size: 1.125em;
 }
+.bold {
+  font-weight: bold;
+}
 /*
 HEADER
 ------------------------------------------------------------------------------
@@ -257,4 +260,71 @@ MOBILE - Extra small devices (phones, 600px and down)
     width: 100%;
     margin-bottom: 10px;
   }
+}
+/*
+ARTICLES
+------------------------------------------------------------------------------
+*/
+
+#articles {
+  width: calc(100vw - 100px);
+  margin: auto;
+}
+.grid-container {
+  display: grid;
+}
+article {
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+article img {
+  object-fit: cover;
+}
+article h2 {
+  font-size: 1em;
+  margin: 0;
+}
+article p {
+  font-size: 0.875em;
+  margin: 0;
+}
+article span.fa {
+  font-size: 0.75em;
+  margin: 0;
+}
+#most-popular,
+#accomodations {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  padding: 3%;
+}
+.fa-star {
+  color: #f2f2f2;
+}
+.fa-star.checked {
+  color: #0065fc;
+}
+/* ACCOMODATIONS */
+
+#accomodations {
+  width: 59%;
+}
+#accomodations .grid-container {
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px 200px;
+  grid-gap: 30px;
+}
+#accomodations .grid-container img {
+  height: 60%;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+#accomodations .grid-container div.text-box {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
 }
