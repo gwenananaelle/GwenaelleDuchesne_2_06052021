@@ -316,15 +316,37 @@ article span.fa {
   grid-template-rows: 200px 200px;
   grid-gap: 30px;
 }
-#accomodations .grid-container img {
+#accomodations article img {
   height: 60%;
   width: 100%;
   border-radius: 25px 25px 0 0;
 }
-#accomodations .grid-container div.text-box {
+#accomodations article div.text-box {
   height: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-left: 10px;
+}
+/*
+MOBILE - Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px) {
+  #articles {
+    width: calc(100vw - 40px);
+    margin: auto;
+  }
+  #articles section {
+    width: 94%;
+    background-color: #ffffff;
+  }
+  .grid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  article {
+    height: 200px;
+  }
 }
