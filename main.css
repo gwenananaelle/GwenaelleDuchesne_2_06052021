@@ -273,6 +273,11 @@ ARTICLES
 .grid-container {
   display: grid;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 article {
   padding: 5px;
   background-color: #ffffff;
@@ -349,4 +354,37 @@ MOBILE - Extra small devices (phones, 600px and down)
   article {
     height: 200px;
   }
+}
+/* MOST POPULAR */
+
+#most-popular {
+  width: 26%;
+}
+.fa-chart-line {
+  float: right;
+}
+#most-popular .grid-container {
+  grid-template-columns: 100%;
+  grid-template-rows: 145px 145px 145px;
+  grid-gap: 30px;
+}
+#most-popular article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#most-popular article img {
+  width: 40%;
+  height: 100%;
+  border-radius: 25px 0 0 25px;
+}
+#most-popular article div.text-box {
+  width: 50%;
+  padding: 3% 2%;
+  margin-top: 3%;
+}
+#most-popular article div.rating {
+  width: fit-content;
+  padding: 2%;
 }
