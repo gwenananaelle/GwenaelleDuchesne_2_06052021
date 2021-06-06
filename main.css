@@ -412,7 +412,7 @@ MOBILE - Extra small devices (phones, 600px and down)
   }
   #articles section {
     width: calc(100vw - 40px);
-    margin: auto;
+    margin: 20px auto;
   }
   #accomodations {
     background-color: #ffffff;
@@ -427,5 +427,15 @@ MOBILE - Extra small devices (phones, 600px and down)
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, 200px);
     grid-gap: 30px;
+  }
+  #activities article {
+    width: 100%;
+  }
+  #activities .flex-container {
+    height: fit-content;
+  }
+  #activities .flex-container article.activity {
+    height: 190px;
+    margin: 10px 0;
   }
 }
