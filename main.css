@@ -195,6 +195,11 @@ button.filters {
   font-size: 1.125em;
   font-weight: bold;
 }
+button.filters:hover {
+  background-color: #0065fc;
+  color: #ffffff;
+}
+
 button.filters span {
   background-color: #deebff;
   color: #0065fc;
