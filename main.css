@@ -270,6 +270,9 @@ ARTICLES
   width: calc(100vw - 100px);
   margin: auto;
 }
+#articles section {
+  margin-bottom: 40px;
+}
 .grid-container {
   display: grid;
 }
@@ -365,6 +368,39 @@ article span.fa {
 #most-popular article div.rating {
   width: fit-content;
   padding: 2%;
+}
+/* ACTIVITIES */
+
+#activities {
+  width: 100%;
+}
+#activities .flex-container {
+  width: 100%;
+  height: 450px;
+  flex-direction: column;
+  align-content: space-between;
+}
+#activities article {
+  width: calc(25% - 35px);
+  padding: 0;
+}
+#activities article img {
+  width: 100%;
+  height: calc(100% - 55px);
+  border-radius: 25px 25px 0 0;
+}
+#activities article h2 {
+  line-height: 50px;
+  margin-left: 20px;
+}
+.height-40 {
+  height: 40%;
+}
+.height-50 {
+  height: 50%;
+}
+.height-100 {
+  height: 100%;
 }
 /*
 MOBILE - Extra small devices (phones, 600px and down)
