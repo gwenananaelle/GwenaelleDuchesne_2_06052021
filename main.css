@@ -333,28 +333,6 @@ article span.fa {
   justify-content: space-evenly;
   margin-left: 10px;
 }
-/*
-MOBILE - Extra small devices (phones, 600px and down)
-*/
-@media only screen and (max-width: 600px) {
-  #articles {
-    width: calc(100vw - 40px);
-    margin: auto;
-  }
-  #articles section {
-    width: 94%;
-    background-color: #ffffff;
-  }
-  .grid-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  article {
-    height: 200px;
-  }
-}
 /* MOST POPULAR */
 
 #most-popular {
@@ -387,4 +365,31 @@ MOBILE - Extra small devices (phones, 600px and down)
 #most-popular article div.rating {
   width: fit-content;
   padding: 2%;
+}
+/*
+MOBILE - Extra small devices (phones, 600px and down)
+*/
+@media only screen and (max-width: 600px) {
+  #articles {
+    width: 100vw;
+    margin: auto;
+  }
+  #articles section {
+    width: calc(100vw - 40px);
+    margin: auto;
+  }
+  #accomodations {
+    background-color: #ffffff;
+  }
+  #articles section#most-popular {
+    order: -1;
+    width: 335px;
+    padding: 20px;
+    border-radius: 0;
+  }
+  #accomodations .grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 30px;
+  }
 }
