@@ -159,6 +159,9 @@ SEARCH
 #search-form button .fa-search {
   display: none;
 }
+button.search.icon.icon-button-right::after {
+  content: "rechercher";
+}
 /*
 MOBILE - Extra small devices (phones, 600px and down)
 */
@@ -167,8 +170,8 @@ MOBILE - Extra small devices (phones, 600px and down)
     width: calc(100vw - 40px);
     margin: auto;
   }
-  #search-form button p {
-    display: none;
+  button.search.icon.icon-button-right::after {
+    content: "";
   }
   #search-form button .fa-search {
     display: inline;
