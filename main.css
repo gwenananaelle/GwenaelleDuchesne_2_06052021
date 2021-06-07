@@ -445,7 +445,7 @@ MOBILE - small devices (phones, 767px and down)
 /*
 TABLET - medium devices (1023px and down)
 */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1023px) and (min-width: 668px) {
   #accomodations {
     width: 100%;
   }
