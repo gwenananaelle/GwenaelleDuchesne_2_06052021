@@ -368,11 +368,10 @@ article span.fa {
 #most-popular article div.text-box {
   width: 50%;
   padding: 3% 2%;
-  margin-top: 3%;
 }
 #most-popular article div.rating {
   width: fit-content;
-  padding: 2%;
+  padding: 0 2%;
 }
 /* ACTIVITIES */
 
@@ -408,9 +407,9 @@ article span.fa {
   height: 100%;
 }
 /*
-MOBILE - Extra small devices (phones, 600px and down)
+MOBILE - small devices (phones, 767px and down)
 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   #articles {
     width: 100vw;
     margin: auto;
@@ -424,7 +423,6 @@ MOBILE - Extra small devices (phones, 600px and down)
   }
   #articles section#most-popular {
     order: -1;
-    width: 335px;
     padding: 20px;
     border-radius: 0;
   }
@@ -442,5 +440,20 @@ MOBILE - Extra small devices (phones, 600px and down)
   #activities .flex-container article.activity {
     height: 190px;
     margin: 10px 0;
+  }
+}
+/*
+TABLET - medium devices (1023px and down)
+*/
+@media only screen and (max-width: 1023px) {
+  #accomodations {
+    width: 100%;
+  }
+  #most-popular {
+    width: 100%;
+  }
+  #most-popular .grid-container {
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 145px;
   }
 }
