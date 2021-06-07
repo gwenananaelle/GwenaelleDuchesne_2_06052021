@@ -287,6 +287,8 @@ ARTICLES
   justify-content: space-between;
 }
 article {
+  height: 100%;
+  width: 100%;
   padding: 5px;
   background-color: #ffffff;
   border-radius: 25px;
@@ -329,12 +331,12 @@ article span.fa {
   grid-template-rows: 200px 200px;
   grid-gap: 30px;
 }
-#accomodations article img {
+#accomodations a article img {
   height: 60%;
   width: 100%;
   border-radius: 25px 25px 0 0;
 }
-#accomodations article div.text-box {
+#accomodations a article div.text-box {
   height: 35%;
   display: flex;
   flex-direction: column;
@@ -384,7 +386,7 @@ article span.fa {
   flex-direction: column;
   align-content: space-between;
 }
-#activities article {
+#activities a {
   width: calc(25% - 35px);
   padding: 0;
 }
@@ -431,13 +433,13 @@ MOBILE - small devices (phones, 767px and down)
     grid-template-rows: repeat(6, 200px);
     grid-gap: 30px;
   }
-  #activities article {
+  #activities a {
     width: 100%;
   }
   #activities .flex-container {
     height: fit-content;
   }
-  #activities .flex-container article.activity {
+  #activities .flex-container a.activity {
     height: 190px;
     margin: 10px 0;
   }
